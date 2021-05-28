@@ -1,0 +1,62 @@
+https://www.bilibili.com/video/BV1ta4y1i7aL?from=search&seid=14490906070851395152
+
+- Copy the project seperately
+- Go to 'Getting Started on Heroku with Python'
+https://devcenter.heroku.com/articles/getting-started-with-python
+
+- Create an Heroku account
+
+- install virtualenvwrapper
+mkvirtualenv my_django_environment
+
+deactivate —退出当前的Python虚拟环境
+workon — 列出可用的所有虚拟环境
+workon name_of_environment —激活特定的Python虚拟环境
+rmvirtualenv name_of_environment — 移除特定的虚拟环境
+
+- Install git ( check git --version)
+- Install Heroku CLI
+- Login heroku
+heroku login -i
+
+- Create a virtual enviroment
+pip install Django
+
+- Run manage.py not gonna run - pip freeze nothing installing
+python runserver.py runserver
+
+- Check which version django,requests you have and install it
+- Run manage.py and then stop it
+- Go to django heroku
+https://devcenter.heroku.com/articles/django-app-configuration
+
+- Create a Procfile and
+
+
+- Install django-heroku
+- Add stuff to settings.py file
+- Install guincorn
+- pip freeze > requirements.txt
+- heroku create attreyaweb (to create an app on heroku)
+- git status git commands (git push heroku master)
+git init
+git add --all
+git commit -m 'First commit'
+heroku git:remote -a attreyaweb
+git push heroku master
+
+- Open up the website
+attreyaweb.herokuapp.com
+attreyaweb.herokuapp.com/admin
+
+- Admin panel not working. heroku run bash. Migrations
+heroku run bash
+ls
+python manage.py migrate
+python manage.py createsuperuser
+
+--update website
+git add --all
+git commit -m 'update page'
+git remote -v
+git push heroku master
