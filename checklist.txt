@@ -23,7 +23,7 @@ heroku login -i
 pip install Django
 
 - Run manage.py not gonna run - pip freeze nothing installing
-python runserver.py runserver
+python manage.py runserver
 
 - Check which version django,requests you have and install it
 - Run manage.py and then stop it
